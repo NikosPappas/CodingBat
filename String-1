@@ -84,7 +84,7 @@ public String theEnd(String str, boolean front) {
     return str.substring(str.length()-1,str.length());
   }
 }
-//13.Given a string, return a version without both the first and last char of the string. 
+//14.Given a string, return a version without both the first and last char of the string. 
 // The string may be any length, including 0.
 public String withouEnd2(String str) {
   if(str.length()==0){
@@ -97,7 +97,7 @@ public String withouEnd2(String str) {
     return str.substring(1,str.length()-1);
   }
 }
-//14.middleTwo 
+//15.middleTwo 
 public String middleTwo(String str) {
   if(str.length()==2){
     return str;
@@ -106,7 +106,7 @@ public String middleTwo(String str) {
     return str.substring((str.length()/2)-1,(str.length()/2)+1);
   }
 }
-//15.endsLy 
+//16.endsLy 
 public boolean endsLy(String str) {
 if(str.equals("") || str.length()<2){
   return false;
@@ -123,7 +123,7 @@ else {
    return str.substring(str.length()-2,str.length()).equals("ly");
  }
 }
-//16.nTwice 
+//17.nTwice 
 public String nTwice(String str, int n) {
   if(n==0){
     return "";
@@ -132,7 +132,7 @@ public String nTwice(String str, int n) {
     return str.substring(0,n)+str.substring(str.length()-n,str.length());
   }
 }
-//17. twoChar
+//18. twoChar
 public String twoChar(String str, int index) {
   if(str.length()<=index+1 || index<0){
     return str.substring(0,2);
@@ -141,7 +141,7 @@ public String twoChar(String str, int index) {
     return str.substring(index,index+2);
   }
 }
-//18.middleThree 
+//19.middleThree 
 public String middleThree(String str) {
   if(str.length()==3){
     return str;
@@ -151,7 +151,7 @@ public String middleThree(String str) {
     return str.substring(len-1,len)+str.substring(len,len)+str.substring(len,len+2);
   }
 }
-//19.hasBad 
+//20.hasBad 
 public boolean hasBad(String str) {
   if(str.length()<3){
     return false;
@@ -165,7 +165,7 @@ public boolean hasBad(String str) {
 	  }
 	   return false;
 }
-//20. atFirst 
+//21. atFirst 
 public String atFirst(String str) {
   if(str.length()==0){
     return "@@";
@@ -180,7 +180,7 @@ public String atFirst(String str) {
     return str.substring(0,2);
   }
 }
-//21.lastChars 
+//22.lastChars 
 public String lastChars(String a, String b) {
   if(a.length()==0){
     a="@";
@@ -190,7 +190,7 @@ public String lastChars(String a, String b) {
   }
     return a.substring(0,1)+b.substring(b.length()-1,b.length());
 }
-//22. conCat 
+//23. conCat 
 public String conCat(String a, String b) {
   if(b.equals("")){
     return a;
@@ -205,7 +205,7 @@ public String conCat(String a, String b) {
     return a+b;
   }
 }
-//23.lastTwo 
+//24.lastTwo 
 public String lastTwo(String str) {
   if(str.equals("")){
     return "";
@@ -221,7 +221,7 @@ public String lastTwo(String str) {
     str.charAt(str.length()-1)+str.charAt(str.length()-2);
   }
 }
-//24. seeColor
+//25. seeColor
 public String seeColor(String str) {
   if(str.indexOf("red")==0){
     return "red";
@@ -233,7 +233,7 @@ public String seeColor(String str) {
     return "";
   }
 }
-//25. frontAgain 
+//26. frontAgain 
 public boolean frontAgain(String str) {
   if(str.equals("")){
     return false;
@@ -253,7 +253,7 @@ public boolean frontAgain(String str) {
     }
   }
 }
-//26. minCat
+//27. minCat
 public String minCat(String a, String b) {
   if(a.equals("")){
     return "";
@@ -275,7 +275,7 @@ public String minCat(String a, String b) {
     }
   }
 }
-//27. extraFront 
+//28. extraFront 
 public String extraFront(String str) {
   if(str.equals("")){
     return "";
@@ -288,7 +288,7 @@ public String extraFront(String str) {
     return sub+sub+sub;
   }
 }
-//28. without2
+//29. without2
 public String without2(String str) {
 	  int len = str.length();
 	  if (len == 2)
@@ -302,7 +302,7 @@ public String without2(String str) {
 	      return str;
 	  }
 }
-//29.deFront
+//30.deFront
 public String deFront(String str) {    
   if(str.equals("")){
     return "";
@@ -327,7 +327,7 @@ public String deFront(String str) {
 }
 
 
-//30.startWord 
+//31.startWord 
 public String startWord(String str, String word) {
   if(str.equals("")){return "";}
   if(str.length()<word.length()){return "";}
@@ -348,7 +348,7 @@ public String startWord(String str, String word) {
     }
   }
 }
-//30. withoutX 
+//32. withoutX 
 public String withoutX(String str) {
   int len=str.length();
   if(str.equals("") || str.length()==1 ){
@@ -367,7 +367,7 @@ public String withoutX(String str) {
     return str;
   }
 }
-//31. withoutX2
+//33. withoutX2
 public String withoutX2(String str) {
   if(str.equals("")){
     return "";
